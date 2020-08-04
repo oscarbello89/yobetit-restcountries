@@ -10,7 +10,7 @@ export default class Header extends Component {
                         <div className=" row">
                             <div className="col-sm-2"><img src={Logo} className="logo" /></div>
                             <div className="col-sm-10 d-none d-sm-block">
-                                <h1 className="jumbotron-heading">Site Header </h1>
+                                <h1 className="jumbotron-heading">Yobetit Test </h1>
                                 <p className="lead">Using services, pipes, routing and a single component using differnet parameters based on differ conditions.</p>
                             </div>
                         </div>
