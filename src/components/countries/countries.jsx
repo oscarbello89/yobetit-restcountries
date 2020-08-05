@@ -22,6 +22,31 @@ export default class Countries extends Component {
         });
     }
 
+    sortData = (event) => {
+        const sortParam = event.target.value;
+        const sortCountries = this.state.countries.sort((a, b) => {
+            return b[sortParam] - a[sortParam]
+        });
+        this.setState({
+            count: 0,
+            visCountries: sortCountries,
+            length:sortCountries.length
+        });
+    }
+
+    filterCountries = () => {
+        let keyw = this.filterText.value.toLowerCase();
+        const filterCountryList = this.state.countries.filter(country => {
+            let cArr = country.name.toLowerCase();
+            return cArr.indexOf(keyw) !== -1;
+        });
+        this.setState({
+            count: 0,
+            visCountries: filterCountryList,
+            length:filterCountryList.length
+        });
+    };
+
     getNext = () => {
         this.state.pageNumber++;
         const start = this.state.count, end = start + this.state.pagination;
@@ -41,6 +66,14 @@ export default class Countries extends Component {
     render() {
         return (
             <section>
+                <h2 className="text-danger">List all the countries and a field to filter the country by name.</h2>
+                <nav className="navbar filterRow text-white bg-info my-4">
+                    <div className="col-md-7">
+                        <label className="text-right col-md-5">Search by Country Name: </label>
+                        <input type="text" onChange={this.filterCountries} ref={node => (this.filterText = node)} className="col-md-7 searchBox" />
+                    </div>
+                    
+                </nav>
                 <div className="row countryList">
                     {this.state.visCountries.map(country => {
                         count: this.state.count++

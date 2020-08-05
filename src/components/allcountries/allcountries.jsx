@@ -51,7 +51,7 @@ export default class AllCountries extends Component {
     render() {
         return (
             <section className="allCountryList">
-                <h2 className="text-danger">All Countries <span className="badge badge-secondary">{this.state.length}</span></h2>
+              <h2 className="text-danger">List all the countries and a field to filter the country by name.</h2>
                 <nav className="navbar filterRow text-white bg-info my-4">
                     <div className="col-md-7">
                         <label className="text-right col-md-5">Search by Country Name: </label>

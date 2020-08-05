@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './header.css';
-import Logo from '../../assets/react-logo.png';
+import Logo from '../../assets/yobetit_logo.png';
 export default class Header extends Component {
     render() {
         return (
@@ -11,7 +11,7 @@ export default class Header extends Component {
                             <div className="col-sm-2"><img src={Logo} className="logo" /></div>
                             <div className="col-sm-10 d-none d-sm-block">
                                 <h1 className="jumbotron-heading">Yobetit Test </h1>
-                                <p className="lead">Using services, pipes, routing and a single component using differnet parameters based on differ conditions.</p>
+                                <p className="lead">React with Redux with NodeJS API.</p>
                             </div>
                         </div>
                     </div>

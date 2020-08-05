@@ -14,7 +14,12 @@ export default class Nav extends Component {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/dash">Dashboard</Link>
+                                <Link className="nav-link" to="/onecountry">Q1: One</Link>
+                                <Link className="nav-link" to="/all">Q2: List</Link>
+                                <Link className="nav-link" to={`/${'all'}`}>Q3: All</Link>
+                                <Link className="nav-link" to="/all">Question 4</Link>
+                                <Link className="nav-link" to="/all">Question 5</Link>
+                                <Link className="nav-link" to="/all">Question 6</Link>
                             </li>
                         </ul>
                     </div>
