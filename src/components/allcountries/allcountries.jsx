@@ -69,13 +69,13 @@ export default class AllCountries extends Component {
 
                 <div className="row copyArea">
                     {this.state.visCountries.map(country => {
-                        count: this.state.count++
+                        this.state.count++
                         return (
                             <div className="col-md-4" key={country.alpha2Code}>
                                 <div className="card">
                                     <h5 className="card-header alert-info text-info">{this.state.count}: {country.name}</h5>
                                     <div className="card-body row">
-                                        <div className="col-md-5 text-center"><img className="imgCountry" src={country.flag} /></div>
+                                        <div className="col-md-5 text-center"><img className="imgCountry" src={country.flag} alt="flag"/></div>
                                         <div className="col-md-7 desc">
                                             <p><b>Capital: </b> {country.capital}</p>
                                             <p><b>Region:</b> {country.region}</p>

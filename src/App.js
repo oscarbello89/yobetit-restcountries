@@ -4,12 +4,12 @@ import Header from './components/header/header.jsx';
 import Nav from './components/navigation/nav.jsx';
 import Footer from './components/footer/footer.jsx';
 import OneCountry from './components/onecountry/onecountry.jsx';
-import Countries from './components/countries/countries.jsx';
+import CountriesList from './components/countrieslist/countrieslist.jsx';
 import AllCountries from './components/allcountries/allcountries.jsx';
 import Regions from './components/regions/regions.jsx';
 import CountryDetail from './components/countrydetail/countrydetail.jsx';
 
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 
 class App extends Component {
@@ -22,8 +22,9 @@ class App extends Component {
             <Nav />
             <div className="copyArea container">
             <Switch>
-             
-                <Route path="/countries" component={Countries} />
+            <Route exact path="/" component={OneCountry} />
+                <Route path="/onecountry" component={OneCountry} />
+                <Route path="/countrieslist" component={CountriesList} />
                 <Route path="/region" component={Regions} />
                 <Route path="/country/:alpha2Code" component={CountryDetail} />
                 <Route path="/:reg" component={AllCountries} />

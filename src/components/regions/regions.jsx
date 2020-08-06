@@ -36,7 +36,7 @@ componentDidMount = () => {
                 <div className="row copyArea">
                     {this.state.regions.map(reg => {
                         const regSrc= 'https://via.placeholder.com/300x150.png/17a2b8/fff?text='+reg;
-                        count: this.state.count++
+                        this.state.count++
                         return (
                             <div className="col-sm-4" key={reg}>
                                 <div className="card mb-4">
