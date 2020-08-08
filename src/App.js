@@ -8,6 +8,7 @@ import CountriesList from './components/countrieslist/countrieslist.jsx';
 import AllCountries from './components/allcountries/allcountries.jsx';
 import Regions from './components/regions/regions.jsx';
 import CountryDetail from './components/countrydetail/countrydetail.jsx';
+import SignupForm from './components/signup/signup.jsx';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
@@ -25,7 +26,7 @@ class App extends Component {
             <Route exact path="/" component={OneCountry} />
                 <Route path="/onecountry" component={OneCountry} />
                 <Route path="/countrieslist" component={CountriesList} />
-                <Route path="/region" component={Regions} />
+                <Route path="/signup" component={SignupForm} />
                 <Route path="/country/:alpha2Code" component={CountryDetail} />
                 <Route path="/:reg" component={AllCountries} />
                 

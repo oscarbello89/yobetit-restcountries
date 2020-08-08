@@ -20,6 +20,7 @@ export default class Nav extends Component {
                                 <Link className="nav-link" to="/onecountry">One Country</Link>
                                 <Link className="nav-link" to="/countrieslist">List array</Link>
                                 <Link className="nav-link" to={`/${'all'}`}>All</Link>
+                                <Link className="nav-link" to="/signup">Signup</Link>
                             </li>
                         </ul>
                     </div>
